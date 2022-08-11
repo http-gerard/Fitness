@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>cardio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let oefening of (cardioSchema | async)">
+    <ion-item>
+      <ion-label>{{oefening.name}}</ion-label>
+      <ion-checkbox checked="{{oefening.isGedaan}}" (click)="setDone(oefening)"></ion-checkbox>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

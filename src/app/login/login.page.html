@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="form">
+
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input [formControl]="userForm.get('email')"></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input type="password" [formControl]="userForm.get('password')"></ion-input>
+    </ion-item>
+
+    <ion-button (click)='signIn()' expand='block'>Login</ion-button>
+    <br>
+
+    <h5 [routerLink]="'/signup'" >Nog geen account? <ion-text color='primary'>Registreer hier</ion-text>
+    </h5>
+
+  </div>
+</ion-content>

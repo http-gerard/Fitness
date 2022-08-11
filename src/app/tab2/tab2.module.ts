@@ -7,6 +7,12 @@ import { Tab2Page } from './tab2.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
+import {BenenPage} from "./schema/benen/benen.page";
+import {DuwenPage} from "./schema/duwen/duwen.page";
+import {TrekkenPage} from "./schema/trekken/trekken.page";
+import {CardioPage} from "./schema/cardio/cardio.page";
+import {AngularFireModule} from "@angular/fire/compat";
+import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 
 @NgModule({
   imports: [
@@ -14,8 +20,10 @@ import { Tab2PageRoutingModule } from './tab2-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab2PageRoutingModule
+    Tab2PageRoutingModule,
+    AngularFireModule,
+    AngularFirestoreModule,
   ],
-  declarations: [Tab2Page]
+  declarations: [Tab2Page, BenenPage, DuwenPage, TrekkenPage, CardioPage]
 })
 export class Tab2PageModule {}

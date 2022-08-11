@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,40 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-item>
+  <ion-title class="titel">Welkom in de app!</ion-title>
+</ion-item>
+  <ion-item>
+    <ion-title >Trainingschema's</ion-title>
+    <ion-button [routerLink]="['../tab2']">Bekijk alle</ion-button>
+  </ion-item>
+
+<ion-item>
+  <ion-slides [options]="slideOpt">
+  <ion-slide>
+    <ion-card class="kaartenSchema" [routerLink]="['../tab2/duwen']">
+      <ion-title>Push Day</ion-title>
+      <ion-text>We gaan de borstspieren afbreken!</ion-text>
+    </ion-card>
+  </ion-slide>
+  <ion-slide>
+    <ion-card>
+      <ion-title>Pull Day</ion-title>
+      <ion-text>We gaan de rug spieren afbreken!</ion-text>
+    </ion-card>
+  </ion-slide>
+  <ion-slide>
+    <ion-card>
+      <ion-title>Leg day</ion-title>
+      <ion-text>We gaan de beenspieren afbreken!</ion-text>
+    </ion-card>
+  </ion-slide>
+  <ion-slide>
+    <ion-card>
+      <ion-title>Cardio</ion-title>
+      <ion-text>We gaan de longen afbreken!</ion-text>
+    </ion-card>
+  </ion-slide>
+</ion-slides></ion-item>
+  <ion-button expand="block" (click)="openBrowser()">Kijk deze video voor motivatie</ion-button>
 </ion-content>

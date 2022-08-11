@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "752688980653",
+    "project_id": "fitness-c41e7",
+    "storage_bucket": "fitness-c41e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752688980653:android:d6d11a9289dd182a2e9c24",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752688980653-mgpae76kap74fvtetngep6nhqlidfhvp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.ionic.starter",
+            "certificate_hash": "27513332597b204f947a4eb97d1ee9cbcee5e043"
+          }
+        },
+        {
+          "client_id": "752688980653-hnfigefciei1c2f2aen3bce8sljh2k72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsB5PHOcCbg3QJ4MlDPbvTYU_eXvsR580"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752688980653-hnfigefciei1c2f2aen3bce8sljh2k72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
